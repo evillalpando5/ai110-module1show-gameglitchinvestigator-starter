@@ -21,7 +21,7 @@ Document at least 3 bugs you found. Add rows as needed.
 |-------|-------------------|-----------------|------------------------|-------------------------|
 | 70    | Hint Go Higher    | Hint go Lower   |          none          | app.py, check_guess     |
 |new game| restart neew game| attempts left changed but unable to submit guess| none | app.py, st.session_state.secret |
-| 100   | Hint go Lower     | hint go higher  |  none                  |  app.py, check_guess    |
+| difficulty easy   | secret in range 1-20| secrect 43 |  none                  |  app.py, st.session_state.secret    |
 
 ---
 

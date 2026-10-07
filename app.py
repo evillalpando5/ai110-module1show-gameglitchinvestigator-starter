@@ -28,7 +28,7 @@ def parse_guess(raw: str):
 
     return True, value, None
 
-
+#  FIXME: Logic breaks here
 def check_guess(guess, secret):
     if guess == secret:
         return "Win", "🎉 Correct!"
@@ -90,6 +90,7 @@ st.sidebar.caption(f"Range: {low} to {high}")
 st.sidebar.caption(f"Attempts allowed: {attempt_limit}")
 
 if "secret" not in st.session_state:
+    # FIXME: Logic breaks here
     st.session_state.secret = random.randint(low, high)
 
 if "attempts" not in st.session_state:
