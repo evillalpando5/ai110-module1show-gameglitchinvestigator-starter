@@ -25,29 +25,30 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [X] Describe the game's purpose.
+- [X] Detail which bugs you found.
+- [X] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User selects difficulty level. The range of numbers will increase with difficulty.
+2. The user keeps normaly difficulty. Range is between 1-50.
+3. The user enters a guess of 40.
+4. Game returns "Too High".
+5. User enters a guess of 10, and the game shows "Too Low".
+6. Score updates after each guess.
+7. The user guesses incorrectly.
+8. The status bar shows the user was unsuccessful and shows the secret number.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
-```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
-```
+test_game_logic.py .....                                                                                        [100%]
+
+================================================== 5 passed in 0.14s =====
 
 ## 🚀 Stretch Features
 
