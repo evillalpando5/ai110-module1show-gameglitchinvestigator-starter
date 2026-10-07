@@ -5,18 +5,23 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+The first time I ran the game I did not open the developer debug info I just played one round of the game. I noticed there were different difficulty levels and was a bit confused on how that would work since its a guessing game. After exploring I realized the difficulty level is tied to the number of guesses. The UI was very nice and easy to understand it felt intuitive. Some features worked like the hint toggle button while others like the press enter to apply was not. 
+
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+The first bug I noticed was the provided hints were leading me in the wrong direction. I was adjusting my guess according to them but never got the correct answer so I looked in the developer debug info to find it was providing incorrect hints.
+The second bug I noticed was the little message in the guess text bar that says press enter to apply. I hit enter multiples but it did not work I had to press submit guess manually. 
+
 
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Input | Expected Behavior | Actual Behavior | Console Output / Error | Suspected Code Location |
+|-------|-------------------|-----------------|------------------------|-------------------------|
+| 70    | Hint Go Higher    | Hint go Lower   |          none          | app.py, check_guess     |
+|new game| restart neew game| attempts left changed but unable to submit guess| none | app.py, st.session_state.secret |
+| 100   | Hint go Lower     | hint go higher  |  none                  |  app.py, check_guess    |
 
 ---
 
